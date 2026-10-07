@@ -111,7 +111,7 @@ $projects = array(
         </div>
     </div>
 
-    <?php foreach ($projects as $project) : ?>
+    <?php foreach ($projects as $project_index => $project) : ?>
         <article class="project-card">
             <div class="project-image">
                 <img
@@ -132,10 +132,14 @@ $projects = array(
                     <?php endforeach; ?>
                 </div>
 
-                <details class="project-description">
-                    <summary>Ver descripción</summary>
-                    <p><?php echo esc_html($project['description']); ?></p>
-                </details>
+                <button
+                    class="project-description-trigger"
+                    type="button"
+                    aria-haspopup="dialog"
+                    aria-controls="project-description-<?php echo esc_attr($project_index); ?>"
+                >
+                    Ver descripción
+                </button>
 
                 <div class="project-tech">
                     <?php foreach ($project['technologies'] as $technology) : ?>
@@ -156,5 +160,25 @@ $projects = array(
                 </div>
             </div>
         </article>
+
+        <dialog
+            class="project-description-dialog"
+            id="project-description-<?php echo esc_attr($project_index); ?>"
+            aria-labelledby="project-description-title-<?php echo esc_attr($project_index); ?>"
+        >
+            <img
+                src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/' . $project['image']); ?>"
+                alt="<?php echo esc_attr($project['image_alt']); ?>"
+            >
+            <div class="project-description-content">
+                <button class="project-description-close" type="button" aria-label="Cerrar descripción">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+                <h3 id="project-description-title-<?php echo esc_attr($project_index); ?>">
+                    <?php echo esc_html($project['title']); ?>
+                </h3>
+                <p><?php echo esc_html($project['description']); ?></p>
+            </div>
+        </dialog>
     <?php endforeach; ?>
 </section>
