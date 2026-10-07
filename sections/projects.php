@@ -105,9 +105,9 @@ $projects = array(
         'description' => 'Proyecto de construcción de un dron con control remoto para vigilancia y monitoreo de áreas de difícil acceso.',
         'features' => array(
             'remoto',
-            '',
-            'Utiliza actions y animaciones',
-            'SEO y posicionamiento web',
+            'ligero',
+            'Economico',
+            'Eficiente',
         ),
         'technologies' => array(
             'Php',
