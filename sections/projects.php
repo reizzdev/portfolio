@@ -98,6 +98,25 @@ $projects = array(
         ),
         'github_url' => 'https://github.com/reizzdev/portfolio',
     ),
+    array(
+        'image' => 'dron.jpg',
+        'image_alt' => 'Construcción de un dron con control remoto para vigilancia y monitoreo de áreas de difícil acceso.',
+        'title' => 'Dron de vigilancia',
+        'description' => 'Proyecto de construcción de un dron con control remoto para vigilancia y monitoreo de áreas de difícil acceso.',
+        'features' => array(
+            'remoto',
+            '',
+            'Utiliza actions y animaciones',
+            'SEO y posicionamiento web',
+        ),
+        'technologies' => array(
+            'Php',
+            'MySql',
+            'JavaScript',
+            'Bootstrap',
+        ),
+        'github_url' => 'https://github.com/reizzdev/portfolio',
+    ),
 );
 
 ?>
