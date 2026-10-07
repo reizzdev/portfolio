@@ -4,6 +4,7 @@ $projects = array(
     array(
         'image' => 'proyecto-2.jpg',
         'image_alt' => 'Proyecto web Full Stack - Plataforma interna',
+        'image_url' => 'https://municipalidad-la-perla-production.up.railway.app/admin/login',
         'title' => 'Proyecto Web Full Stack',
         'description' => 'Plataforma web desarrollada para gestionar el préstamo de equipos tecnológicos entre diferentes áreas de una municipalidad.',
         'features' => array(
@@ -26,6 +27,7 @@ $projects = array(
     array(
         'image' => 'municipalidad.jpg',
         'image_alt' => 'Sistema web de gestión de préstamos',
+        'image_url' => 'https://munilaperla.gob.pe/',
         'title' => 'Pagina Web de la munipalidad Distrital La Perla',
         'description' => 'Diseño y Desarrollo web enfocado en demostrar arquitectura frontend, APIs REST, autenticación y persistencia de datos.',
         'features' => array(
@@ -44,6 +46,7 @@ $projects = array(
     array(
         'image' => 'gestionyreporte.jpg',
         'image_alt' => 'Software de gestión de ventas y reportes para Tienda Martita',
+        'image_url' => '#',
         'title' => 'Sistema de Gestión de Ventas y Reportes',
         'description' => 'Software de escritorio desarrollado para la gestión de ventas, clientes, productos, almacén y reportes administrativos de la tienda Martita.',
         'features' => array(
@@ -63,6 +66,7 @@ $projects = array(
     array(
         'image' => 'streaming2.jpg',
         'image_alt' => 'Plataforma web de películas y series online',
+        'image_url' => '#',
         'title' => 'Plataforma de películas y series online',
         'description' => 'Plataforma web desarrollada para la reproducción y gestión de películas y series. Con usuarios, posicionamiento y mejoras orientadas a la experiencia del usuario.',
         'features' => array(
@@ -82,6 +86,7 @@ $projects = array(
     array(
         'image' => 'portfolio.jpg',
         'image_alt' => 'Es mi plataforma web personal, donde muestro mis proyectos y habilidades como desarrollador web.',
+        'image_url' => '#',
         'title' => 'Portafolio Personal',
         'description' => 'Es mi plataforma web personal, donde muestro mis proyectos y habilidades como desarrollador web. Incluye secciones de contacto, proyectos y habilidades técnicas.',
         'features' => array(
@@ -101,6 +106,7 @@ $projects = array(
     array(
         'image' => 'dron.jpg',
         'image_alt' => 'Construcción de un dron con control remoto para vigilancia y monitoreo de áreas de difícil acceso.',
+        'image_url' => '#',
         'title' => 'Dron de vigilancia',
         'description' => 'Proyecto de construcción de un dron con control remoto para vigilancia y monitoreo de áreas de difícil acceso.',
         'features' => array(
@@ -133,10 +139,19 @@ $projects = array(
     <?php foreach ($projects as $project_index => $project) : ?>
         <article class="project-card">
             <div class="project-image">
-                <img
-                    src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/' . $project['image']); ?>"
-                    alt="<?php echo esc_attr($project['image_alt']); ?>"
+                <a
+                    href="<?php echo esc_url($project['image_url']); ?>"
+                    aria-label="<?php echo esc_attr('Visitar ' . $project['title']); ?>"
+                    <?php if ('#' !== $project['image_url']) : ?>
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    <?php endif; ?>
                 >
+                    <img
+                        src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/' . $project['image']); ?>"
+                        alt="<?php echo esc_attr($project['image_alt']); ?>"
+                    >
+                </a>
             </div>
 
             <div class="project-info">
