@@ -103,6 +103,31 @@ $projects = array(
         'github_label' => 'Código',
         'featured' => false,
     ),
+    array(
+        'image' => 'portfolio.jpg',
+        'image_alt' => 'Es mi plataforma web personal, donde muestro mis proyectos y habilidades como desarrollador web.',
+        'overlay_url' => '#',
+        'type' => 'Portafolio Personal',
+        'title' => 'Portafolio Personal',
+        'description' => 'Es mi plataforma web personal, donde muestro mis proyectos y habilidades como desarrollador web. Incluye secciones de contacto, proyectos y habilidades técnicas.',
+        'features' => array(
+            'Secciones dinamicas y responsivas',
+            'Un excelente diseño UX/UI',
+            'Utiliza actions y animaciones',
+            'SEO y posicionamiento web',
+        ),
+        'technologies' => array(
+            'Php',
+            'MySql',
+            'JavaScript',
+            'Bootstrap',
+        ),
+        'project_url' => 'https://github.com/reizzdev/portfolio',
+        'project_label' => 'Ver proyecto',
+        'github_url' => '#',
+        'github_label' => 'Código',
+        'featured' => false,
+    ),
 );
 
 ?>
