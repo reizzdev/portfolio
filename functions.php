@@ -38,6 +38,14 @@ function kevin_portfolio_assets() {
             ? filemtime($style_path)
             : '1.0';
 
+    $script_path =
+        get_template_directory() . '/assets/js/main.js';
+
+    $script_version =
+        file_exists($script_path)
+            ? filemtime($script_path)
+            : '1.0';
+
 
     wp_enqueue_style(
         'kevin-portfolio-style',
@@ -52,7 +60,7 @@ function kevin_portfolio_assets() {
         get_template_directory_uri() .
         '/assets/js/main.js',
         array(),
-        '1.0',
+        $script_version,
         true
     );
 
