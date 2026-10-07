@@ -7,7 +7,7 @@
 
 
         <span class="section-label">
-            05 · CONTACTOOOO
+            05 · CONTACTO
         </span>
 
 
