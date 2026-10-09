@@ -93,11 +93,12 @@ Version: 3.0
     background:
         linear-gradient(
             135deg,
-            rgba(46, 56, 22, 0.07),
-            rgba(255, 255, 255, 0.025)
+            rgba(56, 189, 248, 0.08),
+            rgba(255, 255, 255, 0.025) 55%,
+            rgba(2, 132, 199, 0.035)
         );
 
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(56, 189, 248, 0.12);
 
     overflow: hidden;
 }
@@ -118,7 +119,7 @@ Version: 3.0
 
     border-radius: 50%;
 
-    border: 1px solid rgba(46, 115, 22, 0.15);
+    border: 1px solid rgba(56, 189, 248, 0.16);
 
     pointer-events: none;
 }
@@ -139,7 +140,7 @@ Version: 3.0
 
     letter-spacing: 0.16em;
 
-    color: #f97316;
+    color: var(--primary);
 }
 
 
@@ -182,35 +183,38 @@ Version: 3.0
 .main-tech {
     position: relative;
 
-    min-height: 105px;
+    min-height: 100px;
 
     display: flex;
 
     align-items: center;
 
-    gap: 14px;
+    gap: 13px;
 
-    padding: 18px;
+    padding: 17px;
 
-    border-radius: 12px;
+    border-radius: 14px;
 
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(8, 11, 18, 0.38);
 
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(148, 163, 184, 0.12);
 
     transition:
-        transform .25s ease,
-        border-color .25s ease,
-        background .25s ease;
+        transform 0.22s ease,
+        border-color 0.22s ease,
+        background 0.22s ease,
+        box-shadow 0.22s ease;
 }
 
 
 .main-tech:hover {
-    transform: translateY(-4px);
+    transform: translateY(-3px);
 
-    border-color: rgba(249, 115, 22, 0.45);
+    border-color: rgba(56, 189, 248, 0.48);
 
-    background: rgba(249, 115, 22, 0.06);
+    background: rgba(56, 189, 248, 0.075);
+
+    box-shadow: 0 10px 26px rgba(2, 132, 199, 0.12);
 }
 
 
@@ -225,13 +229,30 @@ Version: 3.0
 
     flex-shrink: 0;
 
-    border-radius: 10px;
+    border: 1px solid rgba(56, 189, 248, 0.1);
 
-    background: rgba(249, 115, 22, 0.1);
+    border-radius: 12px;
 
-    color: #f97316;
+    background: rgba(56, 189, 248, 0.09);
+
+    color: var(--primary);
 
     font-size: 1.25rem;
+
+    transition:
+        background 0.22s ease,
+        color 0.22s ease,
+        transform 0.22s ease;
+}
+
+
+.main-tech:hover .tech-icon {
+
+    transform: scale(1.05);
+
+    background: rgba(56, 189, 248, 0.16);
+
+    color: #7dd3fc;
 }
 
 
@@ -245,7 +266,7 @@ Version: 3.0
 
 
 .tech-info strong {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
 
     font-weight: 600;
 
@@ -256,7 +277,7 @@ Version: 3.0
 .tech-info span {
     font-size: 0.68rem;
 
-    color: #707070;
+    color: var(--text-muted);
 }
 
 
@@ -268,7 +289,7 @@ Version: 3.0
 
     font-size: 0.6rem;
 
-    color: #444;
+    color: rgba(148, 163, 184, 0.45);
 }
 
 
@@ -329,40 +350,49 @@ Version: 3.0
 
     gap: 8px;
 
-    padding: 10px 14px;
+    padding: 10px 13px;
 
-    border-radius: 7px;
+    border-radius: 999px;
 
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(148, 163, 184, 0.12);
 
-    color: #aaa;
+    color: var(--text-secondary);
 
-    background: rgba(255, 255, 255, 0.018);
+    background: rgba(255, 255, 255, 0.025);
 
     font-size: 0.78rem;
 
     transition:
+        transform 0.2s ease,
         color .2s ease,
-        border-color .2s ease;
+        border-color .2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 
 .secondary-tech i {
-    color: #666;
+    color: var(--text-muted);
 
     font-size: 0.85rem;
 }
 
 
 .secondary-tech:hover {
-    color: #fff;
+    transform: translateY(-2px);
 
-    border-color: rgba(249, 115, 22, 0.35);
+    color: var(--text);
+
+    border-color: rgba(56, 189, 248, 0.42);
+
+    background: rgba(56, 189, 248, 0.075);
+
+    box-shadow: 0 6px 18px rgba(2, 132, 199, 0.1);
 }
 
 
 .secondary-tech:hover i {
-    color: #f97316;
+    color: var(--primary);
 }
 
 
@@ -1530,137 +1560,6 @@ img {
     gap: 6px;
 
     margin-top: 16px;
-
-}
-
-
-.projects .project-tech-stack {
-
-    width: 100%;
-
-    margin-top: 22px;
-
-    padding-top: 16px;
-
-    border-top: 1px solid var(--border);
-
-}
-
-
-.projects .project-tech-heading {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 12px;
-
-    margin-bottom: 12px;
-
-}
-
-
-.projects .project-tech-heading > span:first-child {
-
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 8px;
-
-    color: var(--text);
-
-    font-size: 0.78rem;
-
-    font-weight: 600;
-
-}
-
-
-.projects .project-tech-heading i {
-
-    color: var(--primary);
-
-    font-size: 0.8rem;
-
-}
-
-
-.projects .project-tech {
-
-    gap: 8px;
-
-    list-style: none;
-
-    margin: 0;
-
-    padding: 0;
-
-}
-
-
-.projects .project-tech-count {
-
-    color: var(--text-muted);
-
-    font-size: 0.68rem;
-
-    white-space: nowrap;
-
-}
-
-
-.projects .project-tech li {
-
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 7px;
-
-    padding: 7px 10px;
-
-    border: 1px solid rgba(56, 189, 248, 0.15);
-
-    border-radius: 999px;
-
-    background: rgba(56, 189, 248, 0.06);
-
-    color: var(--text-secondary);
-
-    font-size: 0.72rem;
-
-    line-height: 1;
-
-    transition: background 0.2s, border-color 0.2s, color 0.2s;
-
-}
-
-
-.projects .project-tech li::before {
-
-    width: 5px;
-
-    height: 5px;
-
-    border-radius: 50%;
-
-    background: var(--primary);
-
-    content: "";
-
-}
-
-
-.projects .project-tech li:hover {
-
-    border-color: rgba(56, 189, 248, 0.45);
-
-    background: rgba(56, 189, 248, 0.12);
-
-    color: var(--text);
 
 }
 
