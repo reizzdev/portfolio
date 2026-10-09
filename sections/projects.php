@@ -175,10 +175,22 @@ $projects = array(
                     Ver descripción
                 </button>
 
-                <div class="project-tech">
-                    <?php foreach ($project['technologies'] as $technology) : ?>
-                        <span><?php echo esc_html($technology); ?></span>
-                    <?php endforeach; ?>
+                <div class="project-tech-stack" aria-label="Tecnologías utilizadas">
+                    <div class="project-tech-heading">
+                        <span>
+                            <i class="fas fa-layer-group" aria-hidden="true"></i>
+                            Stack tecnológico
+                        </span>
+                        <span class="project-tech-count">
+                            <?php echo esc_html(count($project['technologies'])); ?>
+                            <?php echo 1 === count($project['technologies']) ? 'tecnología' : 'tecnologías'; ?>
+                        </span>
+                    </div>
+                    <ul class="project-tech">
+                        <?php foreach ($project['technologies'] as $technology) : ?>
+                            <li><?php echo esc_html($technology); ?></li>
+                        <?php endforeach; ?>
+                    </ul>
                 </div>
 
                 <div class="project-links">

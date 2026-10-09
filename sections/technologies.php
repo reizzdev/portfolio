@@ -296,11 +296,6 @@
                 </span>
 
                 <span>
-                    <i class="fab fa-docker"></i>
-                    Docker
-                </span>
-
-                <span>
                     <i class="fab fa-linux"></i>
                     Linux
                 </span>
