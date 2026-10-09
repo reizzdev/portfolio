@@ -81,7 +81,7 @@ $projects = array(
             'Express',
             'React Router',
         ),
-        'github_url' => 'https://github.com/reizzdev/sistema-gestion-tienda',
+        'github_url' => 'https://github.com/reizzdev/platform-of-streaming',
     ),
     array(
         'image' => 'portfolio.jpg',
