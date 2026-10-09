@@ -107,8 +107,8 @@ $projects = array(
         'image' => 'dron.jpg',
         'image_alt' => 'Construcción de un dron con control remoto para vigilancia y monitoreo de áreas de difícil acceso.',
         'image_url' => '#',
-        'title' => 'Dron de vigilancia',
-        'description' => 'Proyecto de construcción de un dron con control remoto para vigilancia y monitoreo de áreas de difícil acceso.',
+        'title' => 'Proyecto Universitario - Construcción de un Dron',
+        'description' => 'Proyecto universitario enfocado en la construcción de un dron con control remoto para vigilancia y monitoreo de áreas de difícil acceso. Incluye diseño, ensamblaje y programación del dron.',
         'features' => array(
             'remoto',
             'ligero',
