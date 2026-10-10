@@ -1,5 +1,4 @@
 <?php
-
 $projects = array(
     array(
         'image' => 'proyecto-2.jpg',
@@ -124,12 +123,9 @@ $projects = array(
         'github_url' => '#',
     ),
 );
-
 ?>
-
 <section id="proyectos" class="projects section">
     <div class="section-header">
-        <span class="section-number">02</span>
         <div>
             <span class="section-label">PORTFOLIO</span>
             <h2>Proyectos destacados</h2>
@@ -156,7 +152,6 @@ $projects = array(
 
             <div class="project-info">
                 <h3><?php echo esc_html($project['title']); ?></h3>
-
                 <div class="project-features">
                     <?php foreach ($project['features'] as $feature) : ?>
                         <div>

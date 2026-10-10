@@ -1,11 +1,5 @@
 <section id="tecnologias" class="technologies section">
-
     <div class="section-header">
-
-        <span class="section-number">
-            01
-        </span>
-
         <div>
             <span class="section-label">
                 STACK
@@ -15,21 +9,14 @@
                 Tecnologías que utilizo
             </h2>
         </div>
-
     </div>
 
-
     <div class="stack-wrapper">
-
-
         <!-- =================================
              STACK PRINCIPAL
         ================================== -->
-
         <div class="stack-main">
-
             <div class="stack-intro">
-
                 <span class="stack-kicker">
                     MI STACK PRINCIPAL
                 </span>
@@ -42,15 +29,10 @@
                     Desarrollo aplicaciones web modernas combinando
                     frontend, backend, APIs y bases de datos.
                 </p>
-
             </div>
 
-
             <div class="main-tech-grid">
-
-
                 <div class="main-tech featured">
-
                     <div class="tech-icon">
                         <i class="fab fa-react"></i>
                     </div>
@@ -63,12 +45,9 @@
                     <span class="tech-number">
                         01
                     </span>
-
                 </div>
 
-
                 <div class="main-tech featured">
-
                     <div class="tech-icon">
                         <i class="fas fa-code"></i>
                     </div>
@@ -81,12 +60,9 @@
                     <span class="tech-number">
                         02
                     </span>
-
                 </div>
 
-
                 <div class="main-tech featured">
-
                     <div class="tech-icon">
                         <i class="fab fa-js"></i>
                     </div>
@@ -99,12 +75,9 @@
                     <span class="tech-number">
                         03
                     </span>
-
                 </div>
 
-
                 <div class="main-tech featured">
-
                     <div class="tech-icon">
                         <i class="fab fa-node-js"></i>
                     </div>
@@ -117,12 +90,9 @@
                     <span class="tech-number">
                         04
                     </span>
-
                 </div>
 
-
                 <div class="main-tech featured">
-
                     <div class="tech-icon">
                         <i class="fas fa-server"></i>
                     </div>
@@ -135,12 +105,9 @@
                     <span class="tech-number">
                         05
                     </span>
-
                 </div>
 
-
                 <div class="main-tech featured">
-
                     <div class="tech-icon">
                         <i class="fas fa-database"></i>
                     </div>
@@ -153,12 +120,9 @@
                     <span class="tech-number">
                         06
                     </span>
-
                 </div>
 
-
                 <div class="main-tech featured">
-
                     <div class="tech-icon">
                         <i class="fas fa-layer-group"></i>
                     </div>
@@ -171,36 +135,23 @@
                     <span class="tech-number">
                         07
                     </span>
-
                 </div>
-
-
             </div>
-
         </div>
-
-
 
         <!-- =================================
              COMPLEMENTARIAS
         ================================== -->
-
         <div class="stack-secondary">
-
             <div class="stack-title">
-
                 <span>
                     TAMBIÉN TRABAJO CON
                 </span>
 
                 <div></div>
-
             </div>
 
-
             <div class="secondary-tech-grid">
-
-
                 <div class="secondary-tech">
                     <i class="fab fa-angular"></i>
                     Angular
@@ -265,26 +216,18 @@
                     <i class="fas fa-wind"></i>
                     Tailwind
                 </div>
-
             </div>
-
         </div>
-
-
 
         <!-- =================================
              HERRAMIENTAS
         ================================== -->
-
         <div class="stack-tools">
-
             <span class="stack-tools-label">
                 HERRAMIENTAS & OTROS
             </span>
 
-
             <div class="tools-list">
-
                 <span>
                     <i class="fab fa-git-alt"></i>
                     Git
@@ -329,12 +272,7 @@
                     <i class="fas fa-eye"></i>
                     YOLO
                 </span>
-
             </div>
-
         </div>
-
-
     </div>
-
 </section>
